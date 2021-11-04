@@ -11,10 +11,12 @@
     <header>
         <nav>
             <ul>
-                @foreach ($pagine as $item)
-                <li>
-                    <a href="">{{$item}}</a>
-                </li>
+                @foreach ($pagine as $pagina)
+                    @if ($pagina == 'home')
+                        <li><a href="http://localhost:8000/">{{$pagina}}</a></li>
+                    @else
+                        <li><a href="http://localhost:8000/{{$pagina}}">{{$pagina}}</a></li>
+                    @endif
                 @endforeach
             </ul>
         </nav>

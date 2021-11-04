@@ -16,10 +16,10 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', function () {
     $data = [
         "pagine" => [
-        "page1" => "Pagina 1",
-        "page2" => "Pagina 2",
-        "page3" => "Pagina 3",
-        "page4" => "Pagina 4",
+        "page1" => "pagina1",
+        "page2" => "pagina2",
+        "page3" => "pagina3",
+        "page4" => "pagina4",
         ],
     ];
     return view('home', $data);
@@ -28,10 +28,10 @@ Route::get('/', function () {
 Route::get('/pagina1', function () {
     $data = [
         "pagine" => [
-        "page1" => "Pagina 1",
-        "page2" => "Pagina 2",
-        "page3" => "Pagina 3",
-        "page4" => "Pagina 4",
+            "home" => "home",
+            "page2" => "pagina2",
+            "page3" => "pagina3",
+            "page4" => "pagina4",
         ],
     ];
     return view('pagina1', $data);
@@ -40,10 +40,10 @@ Route::get('/pagina1', function () {
 Route::get('/pagina2', function () {
     $data = [
         "pagine" => [
-        "page1" => "Pagina 1",
-        "page2" => "Pagina 2",
-        "page3" => "Pagina 3",
-        "page4" => "Pagina 4",
+            "home" => "home",
+            "page1" => "pagina1",
+            "page3" => "pagina3",
+            "page4" => "pagina4",
         ],
     ];
     return view('pagina2', $data);
@@ -52,10 +52,10 @@ Route::get('/pagina2', function () {
 Route::get('/pagina3', function () {
     $data = [
         "pagine" => [
-        "page1" => "Pagina 1",
-        "page2" => "Pagina 2",
-        "page3" => "Pagina 3",
-        "page4" => "Pagina 4",
+            "home" => "home",
+            "page1" => "pagina1",
+            "page2" => "pagina2",
+            "page4" => "pagina4",
         ],
     ];
     return view('pagina3', $data);
@@ -64,10 +64,10 @@ Route::get('/pagina3', function () {
 Route::get('/pagina4', function () {
     $data = [
         "pagine" => [
-        "page1" => "Pagina 1",
-        "page2" => "Pagina 2",
-        "page3" => "Pagina 3",
-        "page4" => "Pagina 4",
+            "home" => "home",
+            "page1" => "pagina1",
+            "page2" => "pagina2",
+            "page3" => "pagina3",
         ],
     ];
     return view('pagina4', $data);
