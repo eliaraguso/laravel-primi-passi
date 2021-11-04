@@ -7,16 +7,22 @@
     <title>Document</title>
 </head>
 <body>
-    <h1>Hello World</h1>
+    <h1>Homepage</h1>
     <header>
         <nav>
             <ul>
-                <li>{{$link1}}</li>
-                <li>{{$link2}}</li>
-                <li>{{$link3}}</li>
-                <li>{{$link4}}</li>
+                <li><a href="/pagina1">{{$link1}}</a></li>
+                <li><a href="/pagina2">{{$link2}}</a></li>
+                <li><a href="/pagina3">{{$link3}}</a></li>
+                <li><a href="/pagina4">{{$link4}}</a></li>           
             </ul>
         </nav>
     </header>
 </body>
 </html>
+
+
+
+     {{-- @foreach ($data as $item)
+     <li>{{$item}}</li>
+ @endforeach --}}
