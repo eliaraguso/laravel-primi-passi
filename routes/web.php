@@ -14,5 +14,11 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
-    return view('home');
+    $data = [
+        "link1" => "Pagina 1",
+        "link2" => "Pagina 2",
+        "link3" => "Pagina 3",
+        "link4" => "Pagina 4"
+    ];
+    return view('home', $data);
 });
