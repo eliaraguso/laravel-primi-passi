@@ -11,10 +11,11 @@
     <header>
         <nav>
             <ul>
-                <li><a href="/pagina1">{{$link1}}</a></li>
-                <li><a href="/pagina2">{{$link2}}</a></li>
-                <li><a href="/pagina3">{{$link3}}</a></li>
-                <li><a href="/pagina4">{{$link4}}</a></li>           
+                @foreach ($pagine as $item)
+                <li>
+                    <a href="">{{$item}}</a>
+                </li>
+                @endforeach
             </ul>
         </nav>
     </header>
@@ -23,6 +24,4 @@
 
 
 
-     {{-- @foreach ($data as $item)
-     <li>{{$item}}</li>
- @endforeach --}}
+     
